@@ -1,4 +1,5 @@
 document.addEventListener("keyup", e => {
+  if (e.key === "Escape")e.target.value = "";
   if (e.target.matches("#buscador")) {
     document.querySelectorAll(".articulo").forEach(fruta => {
       if (fruta.textContent.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())) {
